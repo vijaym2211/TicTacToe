@@ -1,5 +1,7 @@
 package TicTacToe.models;
 import TicTacToe.exceptions.InvalidBotCountException;
+import TicTacToe.strategies.winning_strategy.OrderOneWinningStrategy;
+import TicTacToe.strategies.winning_strategy.PlayerWonStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +12,7 @@ public class Game {
     private int currentPlayerIdx;
     private GameStatus gameStatus;
     private List<Move> moves;
+    private PlayerWonStrategy playerWonStrategy;
 
     public Game(GameBuilder gameBuilder) {
         this.players = gameBuilder.players;
@@ -18,6 +21,7 @@ public class Game {
         this.currentPlayerIdx = 0;
         this.moves = new ArrayList<>();
         this.gameStatus = GameStatus.IN_PROGRESS;
+        this.playerWonStrategy = new OrderOneWinningStrategy(n+1);
     }
 
 
@@ -53,18 +57,27 @@ public class Game {
         this.board.setPlayer(pair.getKey(), pair.getValue(), player);
         Move move = new Move(player, this.board.getCell(pair.getKey(), pair.getValue()));
         this.moves.add(move);
-        if (checkIfWon()) { // check if someone has won
+
+        if(playerWonStrategy.checkIfWon(this.board.getCell(pair.getKey(), pair.getValue())))
+        { // check if someone has won
             this.gameStatus = GameStatus.WON;
             return;
         }
-        if (moves.size() == (players.size() + 1) * (players.size() + 1)) {
+        if(moves.size() == (players.size()+1) * (players.size()+1)){
             this.gameStatus = GameStatus.DRAW;
+            return;
         }
-        this.currentPlayerIdx = (this.currentPlayerIdx + 1) % this.players.size();
+        this.currentPlayerIdx = (this.currentPlayerIdx+1) % this.players.size();
+
     }
 
-    private boolean checkIfWon() {
-        return true;
+    public Player getWinner() {
+        return this.players.get(currentPlayerIdx);
+    }
+
+
+    public Player getWiner() {
+        return this.players.get(currentPlayerIdx);
     }
 
 

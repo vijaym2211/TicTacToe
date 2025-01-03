@@ -45,5 +45,14 @@ public class TicTacToe {
             gameController.printBoard(game);
             gameController.makeMove(game);
         }
+
+        if(gameController.getGameStatus(game) == GameStatus.WON) {
+            Player winner = gameController.getWiner(game);
+            System.out.println(winner.getName() +" with symbol: " + winner.getSymbol() + " has won");
+            gameController.printBoard(game);
+        }
+        else{
+            System.out.println("Game has drawn");
+        }
     }
 }

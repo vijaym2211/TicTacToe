@@ -26,4 +26,8 @@ public class GameController {
     public void makeMove(Game game) {
         game.makeMove();
     }
+
+    public Player getWiner(Game game) {
+        return game.getWiner();
+    }
 }
