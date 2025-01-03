@@ -6,23 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="af082f0a-ff75-42a3-a442-1dd901a1b320" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Projects.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TicTacToe/exceptions/InvalidBotCountException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Bot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/factories/BotPlayingStrategyFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/BotLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Cell.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/GameStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/strategies/bot_playing_strategy/BotPlayingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/strategies/bot_playing_strategy/EasyBotPlayingStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TicTacToe/strategies/winning_strategy/OrderOneWinningStrategy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TicTacToe/strategies/winning_strategy/PlayerWonStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/HumanPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/models/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
